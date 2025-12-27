@@ -1,83 +1,253 @@
-<div align="center">
+# 🚀 PDF Architect Pro
 
-# 🚀 SudhirPDFTool - Pro Architect
-**An Industry-Standard PDF Utility for DevOps & Personal Use**
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-v11.2-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Platform-Windows%20|%20macOS%20|%20Linux-purple?style=for-the-badge" alt="Platform">
+</p>
 
-[![Version](https://img.shields.io/badge/Version-v11.2-blueviolet?style=for-the-badge)](https://github.com/SudhirDevOps1)
-[![License](https://img.shields.io/badge/License-Ethical-green?style=for-the-badge)](https://github.com/SudhirDevOps1)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge)](https://github.com/SudhirDevOps1)
-
----
-
-### 🛡️ Ethical Security Policy
-*Passwords are never cracked or bypassed. Only user-provided passwords are accepted. This tool respects international PDF encryption standards.*
-
----
-</div>
-
-## 📖 Overview
-**SudhirPDFTool** is a powerful terminal-based PDF utility designed to **compress, optimize, modify metadata, and password-protect** your documents. The application features user-friendly animations, visual progress bars, and adheres to industry-standard security practices.
+<p align="center">
+  <b>A powerful, ethical, and feature-rich PDF compression & management tool</b>
+</p>
 
 ---
 
-## 📝 Key Features
+## 📋 Table of Contents
+
+- [✨ Features](#-features)
+- [🛡️ Ethical Security Policy](#️-ethical-security-policy)
+- [📦 Installation](#-installation)
+- [🚀 Usage](#-usage)
+- [⚙️ Configuration Options](#️-configuration-options)
+- [📊 Compression Levels](#-compression-levels)
+- [📝 Logging](#-logging)
+- [🤝 Contributing](#-contributing)
+- [👨‍💻 Author](#-author)
+- [📄 License](#-license)
+
+---
+
+## ✨ Features
 
 | Feature | Description |
-| :--- | :--- |
-| **🗜️ Smart Compression** | Features 3 Levels (Low, Mid, High) with real-time page-by-page progress. |
-| **🔐 Password Mgmt** | Automatically detects encryption; allows you to Keep, Remove, or Set New passwords. |
-| **🧾 Metadata Injection** | Automatically injects Title, Author, Keywords, and Developer credentials. |
-| **📋 System Logging** | Tracks all activities in `pdf_architect.log` with detailed size analytics. |
-| **📁 Smart UX** | Enhanced Visual UI using `colorama`, spinners, and auto-folder opening logic. |
+|---------|-------------|
+| 🗜️ **Smart Compression** | Three levels of compression (Low, Mid, High) using AES-256 encryption |
+| 🔐 **Password Management** | Keep, remove, or set new passwords on PDFs |
+| 📝 **Metadata Editor** | Inject custom title, author, and keywords into PDFs |
+| 📊 **Progress Visualization** | Beautiful animated progress bar during processing |
+| 📁 **Auto Folder Open** | Automatically opens output folder after completion |
+| 📋 **Operation Logging** | Detailed logs saved to `pdf_architect.log` |
+| 🎨 **Colorful CLI** | Beautiful terminal UI with colors and animations |
+| 🔄 **Unique Naming** | Auto-generates unique filenames to prevent overwrites |
+| 💻 **Cross-Platform** | Works on Windows, macOS, and Linux |
 
 ---
 
-## 🛡️ Ethical Guidelines
-- **No Cracking:** Passwords are never cracked, bypassed, or brute-forced.
-- **Consent Based:** The tool operates only with passwords provided by the user.
-- **Ownership:** Users must only process files they own or have explicit permission to modify.
-- **Standard Compliant:** Fully respects PDF encryption and AES-256 security standards.
+## 🛡️ Ethical Security Policy
+
+```
+✔ Passwords are NEVER cracked or bypassed
+✔ Only user-provided passwords are accepted
+✔ Use only files you own or have permission for
+⚖ This tool respects PDF encryption standards
+```
+
+> **Note:** This tool is designed with ethics in mind. It will not attempt to break or bypass any PDF security measures.
 
 ---
 
-## 🎮 Terminal Experience (v11.2 Preview)
+## 📦 Installation
 
-See how the tool looks in action with high-fidelity color output:
+### Prerequisites
 
-```diff
-+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-+ 🚀  SUDHIR SINGH'S PDF ARCHITECT PRO
-! GitHub: @SudhirDevOps1 | Version: v11.2
-+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Python 3.8 or higher
+- pip (Python package manager)
 
---- 1️⃣ Input Section ---
-# 📂 Enter PDF Path ➜ App_test.pdf
-- 🔐 PDF is password protected
-# Do you have the password? (y/n) ➜ y
-- Enter Password ➜ 12345
+### Step 1: Clone the Repository
 
---- 2️⃣ Security Report & Metadata ---
-+ 🔍 PDF Security Report
-+ • Originally Encrypted : YES
-+ • Page Count           : 4
+```bash
+git clone https://github.com/SudhirDevOps1/pdf-architect-pro.git
+cd pdf-architect-pro
+```
 
---- 3️⃣ Smart Output Control ---
-- ⚠ Original PDF password detected!
-+ [1] Keep original password
-- [2] Remove password
-! [3] Set a new password
-# Select ➜ 3
+### Step 2: Install Dependencies
 
---- 4️⃣ Processing Status ---
-# 📄 Processing Pages [████████████████████] 4/4 ✔ Done
+```bash
+pip install -r requirements.txt
+```
 
---- 5️⃣ Final Success Dashboard ---
-+ ✅ SUCCESSFUL!
-+ 📍 Path   ➜ App_test_compressed.pdf
-- Before ➜ 5.24 MB | After ➜ 1.02 MB
-! Saved  ➜ 80.5%
+Or install manually:
 
+```bash
+pip install PyMuPDF colorama
+```
+
+### Dependencies
+
+| Package | Purpose |
+|---------|---------|
+| `PyMuPDF` (fitz) | PDF manipulation and compression |
+| `colorama` | Cross-platform colored terminal output |
 
 ---
-### 🤝 Connect with Me
-Developed with ❤️ by **Sudhir Singh** 
+
+## 🚀 Usage
+
+### Run the Application
+
+```bash
+python pdf_architect.py
+```
+
+### Interactive Workflow
+
+1. **Enter PDF Path** - Provide the full path to your PDF file
+2. **Password Prompt** - If PDF is encrypted, enter the password
+3. **Set Metadata** - Customize title, author, and keywords
+4. **Password Options** - Choose to keep, remove, or set new password
+5. **Compression Level** - Select Low, Mid, or High compression
+6. **Done!** - Output file is saved and folder opens automatically
+
+### Quick Example
+
+```
+📂 Enter PDF Path ➜ /path/to/document.pdf
+
+🔍 PDF Security Report
+• Originally Encrypted : NO
+• Currently Locked     : NO
+• Page Count           : 25
+
+🧾 Metadata Injector
+Title ➜ My Document
+Author ➜ John Doe
+Keywords ➜ report, annual, 2024
+
+🔐 Password-protect output? (y/n) ➜ n
+
+🗜 Compression Level
+[1] Low
+[2] Mid
+[3] High
+Select ➜ 2
+
+📄 Processing Pages [████████████████████] 25/25
+
+✅ SUCCESSFUL!
+📍 Path ➜ /path/to/document_compressed.pdf
+Before ➜ 15.20 MB
+After  ➜ 8.45 MB
+Saved  ➜ 44.4%
+```
+
+---
+
+## ⚙️ Configuration Options
+
+### Password Management Options
+
+| Option | Description |
+|--------|-------------|
+| **Keep Original** | Maintains the same password as the source PDF |
+| **Remove Password** | Creates an unprotected output PDF |
+| **Set New Password** | Applies a new password with AES-256 encryption |
+
+### Metadata Fields
+
+| Field | Default Value |
+|-------|---------------|
+| Title | Original filename |
+| Author | "Sudhir Singh" |
+| Keywords | "PDF, Compression" |
+| Creator | "Sudhir Singh - PDF Architect Pro" |
+| Producer | "SudhirDevOps1" |
+
+---
+
+## 📊 Compression Levels
+
+| Level | Garbage Collection | Best For |
+|-------|-------------------|----------|
+| 🟢 **Low** | Level 2 | Quick compression, minimal quality loss |
+| 🟡 **Mid** | Level 3 | Balanced compression and quality |
+| 🔴 **High** | Level 4 | Maximum compression, smaller file size |
+
+> **Tip:** For documents with many images, High compression yields the best results.
+
+---
+
+## 📝 Logging
+
+All operations are logged to `pdf_architect.log` with the following information:
+
+```
+[2024-01-15 14:30:25.123456]
+Input  : /path/to/original.pdf
+Output : /path/to/original_compressed.pdf
+Pages  : 25
+Saved  : 44.4%
+----------------------------------------
+```
+
+---
+
+## 🖥️ System Requirements
+
+| OS | Supported |
+|----|-----------|
+| Windows 10/11 | ✅ |
+| macOS 10.14+ | ✅ |
+| Ubuntu 18.04+ | ✅ |
+| Other Linux | ✅ |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+---
+
+## 👨‍💻 Author
+
+<p align="center">
+  <b>Sudhir Singh</b><br>
+  <a href="https://github.com/SudhirDevOps1">
+    <img src="https://img.shields.io/badge/GitHub-@SudhirDevOps1-black?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2024 Sudhir Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software...
+```
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/SudhirDevOps1">Sudhir Singh</a>
+</p>
+
+<p align="center">
+  ⭐ Star this repo if you find it helpful!
+</p>
